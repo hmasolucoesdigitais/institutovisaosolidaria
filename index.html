@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instituto Vis&atilde;o Solid&aacute;ria</title>
+<meta name="theme-color" content="#0A45E8">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
+<style>
+:root{--blue:#0A45E8;--blue2:#0733B8;--blue3:#0A1F6B;--or:#E8590C;--or2:#FF7A2E;--ink:#0E1630;--mut:#5B6585;--line:rgba(14,22,48,.12)}
+*{box-sizing:border-box}
+html{background:var(--blue3)}
+body{margin:0;min-height:100vh;color:var(--ink);font:400 15px/1.5 Inter,system-ui,sans-serif;overflow-x:hidden;background:radial-gradient(700px 420px at 50% -8%,rgba(120,160,255,.55),transparent 70%),linear-gradient(180deg,var(--blue) 0,var(--blue2) 55%,var(--blue3) 100%);background-attachment:fixed}
+.wrap{max-width:440px;margin:0 auto;padding:30px 16px 44px;display:flex;flex-direction:column;gap:13px}
+.hero{background:#fff;border-radius:26px;padding:22px 18px 18px;text-align:center;box-shadow:0 18px 44px rgba(3,10,60,.45)}
+.logo{display:flex;align-items:center;justify-content:center;gap:10px;padding:2px 0}.mk{flex:none;width:76px;height:auto}.lt{display:flex;flex-direction:column;align-items:stretch;text-align:center}.lt b{background:#0A3DFF;color:#fff;font:800 25px/1 Sora,sans-serif;letter-spacing:.02em;padding:7px 10px}.lt span{color:#0A3DFF;font:700 19px/1.2 Sora,sans-serif;margin-top:4px}
+.hook{margin:14px 0 0;padding:13px 14px;border-radius:16px;background:linear-gradient(135deg,var(--or2),var(--or) 60%,#C24400);color:#fff;font:700 15.5px/1.35 Sora,sans-serif;text-wrap:balance;box-shadow:0 8px 20px rgba(232,89,12,.4)}.hook em{font-style:normal;color:#FFF0A8;font-weight:800}
+.bio{margin:12px 0 0;color:var(--mut);font-size:14px;text-wrap:balance}
+.btn{position:relative;display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:18px;text-decoration:none;color:var(--ink);background:#fff;box-shadow:0 8px 22px rgba(3,10,60,.28);transition:.22s;overflow:hidden}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(3,10,60,.4)}
+.ic{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#fff;box-shadow:0 3px 10px rgba(14,22,48,.18),inset 0 0 0 1px rgba(14,22,48,.07)}
+.ic svg{width:27px;height:27px}
+.ic.r{background:var(--or);box-shadow:0 5px 14px rgba(232,89,12,.45)}.ic.r svg{fill:#fff}
+.t{flex:1;min-width:0}
+.t b{display:block;font:700 16.5px Sora,sans-serif}
+.t span{display:block;color:var(--mut);font-size:12.8px;margin-top:1px}
+.go{flex:none;color:var(--blue);font:700 20px Sora,sans-serif}
+.main{padding:18px 16px;background:linear-gradient(135deg,#2BD96B,#14B352 55%,#0C8F3E);color:#fff;box-shadow:0 14px 32px rgba(20,179,82,.45)}
+.main .t b{font-size:18px}.main .t span{color:#E3FFEE}.main .go{color:#fff}
+.main::after,.gg::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-18deg);animation:sheen 4.5s ease-in-out infinite;pointer-events:none}
+.gg{padding:18px 16px;border:2px solid #F5B301;background:linear-gradient(135deg,#FFFDF5,#FFF1C2);animation:glow 2.6s ease-in-out infinite}
+.gg::after{background:linear-gradient(100deg,transparent,rgba(255,255,255,.85),transparent);animation-duration:3.2s}
+.gg .t b{font-size:18px}.gg .t span{color:#7A5A00}.gg .go{color:#C98F00}
+.gg .ic{width:52px;height:52px}
+.gg .stars{font-size:15px;text-shadow:0 0 8px rgba(245,179,1,.8)}
+@keyframes glow{0%,100%{box-shadow:0 0 0 4px rgba(245,179,1,.2),0 12px 28px rgba(245,179,1,.4)}50%{box-shadow:0 0 0 7px rgba(245,179,1,.34),0 16px 40px rgba(245,179,1,.7)}}
+@keyframes sheen{0%,55%{left:-60%}100%{left:130%}}
+.stars{color:#F5A400;letter-spacing:2px;font-size:13px;font-style:normal}
+.btn:focus-visible,.cta:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.foot{margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.25);text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center;color:#fff}
+.fh{margin:0;font:800 18px Sora,sans-serif}
+.cta{display:inline-block;padding:11px 18px;border-radius:12px;border:1px solid #fff;color:#fff;text-decoration:none;font-weight:600;font-size:14px;background:rgba(255,255,255,.08)}
+.cta:hover{background:#fff;color:var(--blue3)}
+.c{margin:0;color:#C5D2FF;font-size:12px;line-height:1.7}
+.copy{margin:0;text-align:center;color:#9FB2F5;font-size:12px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="hero"><div class="logo" role="img" aria-label="Instituto Vis&atilde;o Solid&aacute;ria"><svg class="mk" viewBox="105 85 130 115" aria-hidden="true"><path fill="#0A3DFF" d="M120.6 131.2C120.6 141.1 124.5 152.8 130.1 161C130.9 162.3 131.6 163.3 132.4 164.5L137.5 170.6C138.5 171.6 139.1 172.5 140.2 173.5C140.8 174 141.1 174.2 141.8 174.8C144.1 177.2 146.8 179.2 149.5 181.2L156.3 185.7C156.2 184.9 149.6 174.6 148.9 173.3L143.7 163.5C143.1 162.3 142.6 161.2 142 160C141.5 159 140.9 157.7 140.5 156.6L137 147.8C134.6 141 131.6 129.5 134 122C135.7 116.2 140.6 113.1 146.5 113.1C152.7 113.1 152.4 113.6 157 114C156.1 112.2 151.6 109.2 150 108.2C133 98.1 120.6 112.8 120.6 131.2"/><path fill="#E35205" d="M177.8 126.7C180.2 126.7 182.1 126 184.7 126C191.4 126 196.7 126.7 199.6 134C202.6 141.8 198.5 156.6 195.8 163.5L190.8 175.9C189.9 178 188.9 179.8 188 181.9L183.7 190.5C183.2 191.4 182.5 192.5 182.3 193.5C183 193.3 185.8 190.9 186.6 190.2L193.2 183.9C193.6 183.3 193.7 183.1 194.3 182.5C200.8 176.1 206.1 167.5 209.8 159.2C214.4 148.9 215.7 135.3 208.5 125.6C201.1 115.8 189.3 116.7 180.2 124.4C179.8 124.8 179.7 124.7 179.3 125.1C178.7 125.6 178.2 126.1 177.8 126.7"/><path fill="#00A74A" d="M161.5 118.7C156.6 116.1 149.8 113.8 144.6 117.2C143 118.3 141.9 119.1 140.9 120.7C147.7 119.1 153.5 121.2 158.8 124.7C160.4 125.8 161.7 127 163.3 128.1C163.9 127.6 164.9 126.2 165.9 125.3L168.8 122.8C169.6 122.2 170.1 121.8 171 121.2C187.9 109.9 202 119.8 204.8 120C204.6 119 203.6 118.4 202.9 117.7C198.2 113 191.3 106.4 183.6 106.4C177.7 106.4 174.2 107.5 169.7 110.8C168.1 112 162.5 117.2 161.5 118.7"/><path fill="#E35205" d="M217.4 128.7C225.1 128.7 229.5 120.1 225.4 113.5C220.7 106 208.3 109 208 118.9C207.9 121.5 209.2 123.9 210.8 125.7C211.5 126.6 212.5 127.2 213.5 127.7C214.5 128.2 216 128.7 217.4 128.7"/><path fill="#0A3DFF" d="M109 103.2C109 108.3 113.1 112.9 117.7 112.9C121.1 112.9 122.8 112.3 125.2 109.9C131.1 104 126.4 93.6 119 93.6C113.1 93.6 109 97.6 109 103.2"/><path fill="#00A74A" d="M153.7 99C153.7 104 157.7 108.6 162.4 108.6C166.6 108.6 170.2 106.9 171.8 102.8C174.6 96.1 169.6 89.8 163.7 89.4L162.5 89.4C160.5 89.5 158.3 90.4 156.4 92.3C154.9 93.8 153.7 96.1 153.7 99"/></svg><div class="lt"><b>INSTITUTO</b><span>Vis&atilde;o Solid&aacute;ria</span></div></div>
+<div class="hook">Fa&ccedil;a uma avalia&ccedil;&atilde;o e <em>ganhe uma arma&ccedil;&atilde;o gr&aacute;tis</em> na compra das suas lentes</div></header>
+<a class="btn main" href="https://wa.me/+5577999102229?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20links%20do%20Instituto%20Vis%C3%A3o%20Solid%C3%A1ria." target="_blank" rel="noopener"><span class="ic "><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><div class="t"><b>WhatsApp principal</b><span>Atendimento com IA</span></div><span class="go">&rarr;</span></a>
+<a class="btn gg" href="https://search.google.com/local/writereview?placeid=ChIJz5F2TPaLXwcRA65Z6P9eBVc" target="_blank" rel="noopener"><span class="ic "><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span><div class="t"><b>Avalie no Google</b><span><em class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</em> &nbsp;Arma&ccedil;&atilde;o gr&aacute;tis</span></div><span class="go">&rarr;</span></a>
+<a class="btn " href="https://wa.me/+5577999173497?text=Ol%C3%A1%21%20Gostaria%20de%20falar%20com%20um%20atendente%20do%20Instituto%20Vis%C3%A3o%20Solid%C3%A1ria." target="_blank" rel="noopener"><span class="ic "><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#25D366" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></span><div class="t"><b>WhatsApp atendente</b><span>Atendimento humano</span></div><span class="go">&rarr;</span></a>
+<a class="btn " href="https://www.instagram.com/ivs.barreiras/" target="_blank" rel="noopener"><span class="ic "><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#FEDA75"/><stop offset=".25" stop-color="#FA7E1E"/><stop offset=".5" stop-color="#D62976"/><stop offset=".75" stop-color="#962FBF"/><stop offset="1" stop-color="#4F5BD5"/></linearGradient></defs><path fill="url(#g)" d="M7.5 1h9A6.5 6.5 0 0 1 23 7.5v9a6.5 6.5 0 0 1-6.5 6.5h-9A6.5 6.5 0 0 1 1 16.5v-9A6.5 6.5 0 0 1 7.5 1Zm0 2A4.5 4.5 0 0 0 3 7.5v9A4.5 4.5 0 0 0 7.5 21h9a4.5 4.5 0 0 0 4.5-4.5v-9A4.5 4.5 0 0 0 16.5 3h-9ZM12 6.9a5.1 5.1 0 1 1 0 10.2 5.1 5.1 0 0 1 0-10.2Zm0 2a3.1 3.1 0 1 0 0 6.2 3.1 3.1 0 0 0 0-6.2Zm5.3-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg></span><div class="t"><b>Instagram</b><span>@ivs.barreiras</span></div><span class="go">&rarr;</span></a>
+<a class="btn " href="https://maps.app.goo.gl/qiEFVso2a9oYM13RA" target="_blank" rel="noopener"><span class="ic r"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span><div class="t"><b>Localiza&ccedil;&atilde;o</b><span>Como chegar ao Instituto</span></div><span class="go">&rarr;</span></a>
+<footer class="foot"><p class="fh">Quer a sua p&aacute;gina de links?</p>
+<a class="cta" href="https://wa.me/+5577999735965?text=Ol%C3%A1%21%20Vi%20a%20propaganda%20e%20quero%20a%20minha%20p%C3%A1gina%20de%20links." target="_blank" rel="noopener">Quero minha p&aacute;gina de links</a>
+<p class="c">HMA Solu&ccedil;&otilde;es Digitais<br>WhatsApp 77 99973-5965<br>Instagram @digital.hma<br>hmasolucoesdigitais@gmail.com</p></footer>
+<p class="copy">&copy; Instituto Vis&atilde;o Solid&aacute;ria</p>
+</main>
+
+</body>
+</html>
